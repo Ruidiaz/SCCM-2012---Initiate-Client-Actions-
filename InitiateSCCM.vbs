@@ -2,7 +2,7 @@
 '	InitiateSCCM.vbs
 ' 		- Script to invoke ConfigMgr client actions
 '
-'	Version	Date		   Who				        Changes
+'	Version	Date		 Who				Changes
 '	1.0		13/10/2016   Javier RUIDIAZ   	.
 '------------------------------------------------------------------------------------
 
@@ -43,6 +43,8 @@ writeLog("----------------------------------------------------------------------
 writeLog("INFO: InitiateSCCM started " & strTimeStamp & ".")
 writeLog("--------------------------------------------------------------------------------------------------")
 
+MsgBoxInfo("Welcome to ConfigMgr Clients push Application. Press OK to begin. ")
+
 	'Set Variables For Actions 
 	actionNameToRun = "Updates Source Scan Cycle" 
 	actionNameToRun1 = "Software Updates Assignments Evaluation Cycle" 
@@ -80,6 +82,7 @@ writeLog("----------------------------------------------------------------------
 writeLog("INFO: InitiateSCCM has finished")
 writeLog("--------------------------------------------------------------------------------------------------")
 
+MsgBoxInfo("ConfigMgr Clients Finished.") 
 
 ' functions and subs
 '=============================================
